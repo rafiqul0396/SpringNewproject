@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--This is our beans meta data and We use Setter Injection here  -->
+
+    <bean class ="org.example.Student" name ="student1">
+        <property name="id">
+            <value>123</value>
+        </property>
+        <property name="name">
+            <value>"Technoname"</value>
+        </property>
+    </bean>
+
+    <bean class ="org.example.Student" name ="student3">
+        <property name="id">
+            <value>122</value>
+        </property>
+        <property name="name">
+            <value>"Tech name 2"</value>
+        </property>
+    </bean>    <bean class ="org.example.Student" name ="student2">
+    <property name="id">
+        <value>125</value>
+    </property>
+    <property name="name">
+        <value>"Techno name 3"</value>
+    </property>
+</bean>
+</beans>
